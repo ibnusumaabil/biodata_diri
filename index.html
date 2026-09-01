@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Ibnu Suma Abil Abdil Barr</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Tetap External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Decoration Glows -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portofolio<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#profile" class="nav-item">Profil</a>
+                <a href="#projects" class="nav-item">Proyek</a>
+                <a href="#contact" class="nav-item">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+        <!-- Section Profil -->
+        <section id="profile" class="glass-card profile-section">
+            <div class="avatar-wrapper">
+                <img src="images/foto-profil.jpeg" alt="Ibnu Suma Abil Abdil Barr" class="avatar">
+            </div>
+            <div class="profile-info">
+                <span class="status-badge"><span class="pulse-dot"></span> Open for Collaboration</span>
+                <h1>IBNU SUMA ABIL ABDIL BARR</h1>
+                <p class="subtitle">Digital Business Enthusiast & Creative Digital Professional</p>
+                <p class="bio">
+                    Mahasiswa Bisnis Digital yang menggabungkan kreativitas, teknologi, dan pemahaman bisnis untuk membangun konten, proyek digital, dan solusi kreatif yang bernilai.
+                </p>
+                
+                <div class="skills">
+                    <span class="badge">Content Creator</span>
+                    <span class="badge">Digital Marketing</span>
+                    <span class="badge">Web Development</span>
+                    <span class="badge">AI Tools</span>
+                    <span class="badge">Creative Design</span>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="https://github.com/ibnusumaabil" target="_blank" class="btn btn-primary">
+                        GitHub
+                    </a>
+                    <a href="https://instagram.com/ibn.verse" target="_blank" class="btn btn-secondary">
+                        Instagram
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Proyek -->
+        <section id="projects" class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Showcase</span>
+                <h2 class="section-title">Proyek & Pengalaman Unggulan</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="glass-card project-card">
+                    <div>
+                        <div class="project-tag">AI & Web Development</div>
+                        <h3>AI Script Generator</h3>
+                        <p>Membangun platform web yang terintegrasi dengan teknologi AI untuk membantu proses pembuatan dan otomasi *script* konten secara cepat.</p>
+                    </div>
+                    <a href="#" class="btn-link">Lihat Detail <span>&rarr;</span></a>
+                </article>
+
+                <article class="glass-card project-card">
+                    <div>
+                        <div class="project-tag">Branding & Business</div>
+                        <h3>Digitalisasi & Branding UMKM</h3>
+                        <p>Kolaborasi bersama UMKM lokal dalam pembuatan website usaha, perancangan identitas logo, hingga pembuatan desain kemasan produk yang bernilai jual.</p>
+                    </div>
+                    <a href="#" class="btn-link">Lihat Detail <span>&rarr;</span></a>
+                </article>
+
+                <article class="glass-card project-card">
+                    <div>
+                        <div class="project-tag">Content & Marketing</div>
+                        <h3>Affiliate Content Creation</h3>
+                        <p>Pengembangan strategi *content creation* dan *affiliate marketing* untuk promosi produk melalui konten kreatif di platform TikTok (@suma.vt) & Instagram.</p>
+                    </div>
+                    <a href="https://tiktok.com/@suma.vt" class="btn-link">Lihat Detail <span>&rarr;</span></a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section Formulir Kontak -->
+        <section id="contact" class="section-container">
+            <div class="glass-card contact-card">
+                <div class="section-header text-center">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Hubungi Saya</h2>
+                    <p class="section-subtitle">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan melalui formulir di bawah ini.</p>
+                </div>
+
+                <form id="whatsappForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" name="email" placeholder="ibnusuma9@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan Anda</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan lengkap Anda..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Kirim Pesan Sekarang
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 <strong>Ibnu Suma Abil Abdil Barr</strong>. Crafted with precision & passion.</p>
+    </footer>
+
+    <!-- JavaScript Internal untuk WhatsApp Direct Redirect -->
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const phoneNumber = "6282333921320";
+            const text = `Halo Ibnu, perkenalkan saya ${name} (${email}).%0A%0A${message}`;
+            
+            window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
