@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- CSS Tetap External -->
+    <!-- CSS External -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -77,9 +77,9 @@
                     <div>
                         <div class="project-tag">AI & Web Development</div>
                         <h3>AI Script Generator</h3>
-                        <p>Membangun platform web yang terintegrasi dengan teknologi AI untuk membantu proses pembuatan dan otomasi *script* konten secara cepat.</p>
+                        <p>Membangun platform web yang terintegrasi dengan teknologi AI untuk membantu proses pembuatan dan otomasi script konten secara cepat.</p>
                     </div>
-                    <a href="#" class="btn-link">Lihat Detail <span>&rarr;</span></a>
+                    <a href="https://tiktok.com/@suma.vt" target="_blank" class="btn-link">Lihat Detail <span>&rarr;</span></a>
                 </article>
 
                 <article class="glass-card project-card">
@@ -88,49 +88,34 @@
                         <h3>Digitalisasi & Branding UMKM</h3>
                         <p>Kolaborasi bersama UMKM lokal dalam pembuatan website usaha, perancangan identitas logo, hingga pembuatan desain kemasan produk yang bernilai jual.</p>
                     </div>
-                    <a href="#" class="btn-link">Lihat Detail <span>&rarr;</span></a>
+                    <a href="https://tiktok.com/@suma.vt" target="_blank" class="btn-link">Lihat Detail <span>&rarr;</span></a>
                 </article>
 
                 <article class="glass-card project-card">
                     <div>
                         <div class="project-tag">Content & Marketing</div>
                         <h3>Affiliate Content Creation</h3>
-                        <p>Pengembangan strategi *content creation* dan *affiliate marketing* untuk promosi produk melalui konten kreatif di platform TikTok (@suma.vt) & Instagram.</p>
+                        <p>Pengembangan strategi content creation dan affiliate marketing untuk promosi produk melalui konten kreatif di platform TikTok (@suma.vt) & Instagram.</p>
                     </div>
-                    <a href="https://tiktok.com/@suma.vt" class="btn-link">Lihat Detail <span>&rarr;</span></a>
+                    <a href="https://tiktok.com/@suma.vt" target="_blank" class="btn-link">Lihat Detail <span>&rarr;</span></a>
                 </article>
             </div>
         </section>
 
-        <!-- Section Formulir Kontak -->
+        <!-- Section Kontak Murni HTML -->
         <section id="contact" class="section-container">
             <div class="glass-card contact-card">
                 <div class="section-header text-center">
                     <span class="section-tag">Get In Touch</span>
                     <h2 class="section-title">Hubungi Saya</h2>
-                    <p class="section-subtitle">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan melalui formulir di bawah ini.</p>
+                    <p class="section-subtitle">Punya pertanyaan atau ingin bekerja sama? Silakan kirim pesan langsung via WhatsApp.</p>
                 </div>
 
-                <form id="whatsappForm" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Alamat Email</label>
-                        <input type="email" id="email" name="email" placeholder="ibnusuma9@gmail.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Pesan Anda</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan lengkap Anda..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-submit">
-                        Kirim Pesan Sekarang
-                    </button>
-                </form>
+                <div class="contact-action text-center">
+                    <a href="https://wa.me/6282333921320?text=Halo%20Ibnu,%20saya%20tertarik%20untuk%20berkolaborasi%20dengan%20Anda." target="_blank" class="btn btn-primary btn-submit">
+                        Kirim Pesan via WhatsApp
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -140,20 +125,5 @@
         <p>&copy; 2026 <strong>Ibnu Suma Abil Abdil Barr</strong>. Crafted with precision & passion.</p>
     </footer>
 
-    <!-- JavaScript Internal untuk WhatsApp Direct Redirect -->
-    <script>
-        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            const phoneNumber = "6282333921320";
-            const text = `Halo Ibnu, perkenalkan saya ${name} (${email}).%0A%0A${message}`;
-            
-            window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
-        });
-    </script>
 </body>
 </html>
